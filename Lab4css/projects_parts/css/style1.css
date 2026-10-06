@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.recipe-card {
+    background-color: #ffffff;
+    border: 1px solid #b2b2d8;
+    padding: 30px 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+#main-title {
+    color: #d93829;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#sub-title {
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.ingredients-list p {
+    color: #000000;
+    font-size: 18px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+mark {
+    background-color: #e2f267;
+    color: inherit;
+    padding: 0 4px;
+}
+
+sub {
+    font-size: 14px;
+}
+
+sup {
+    font-size: 12px;
+}
+
+.green-divider {
+    border: none;
+    height: 4px;
+    background-color: #2e7d32;
+    margin: 25px 0;
+}
+
+#footer-note {
+    font-style: italic;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.5;
+}
