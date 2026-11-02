@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background: #ffffff;
+}
+
+.wrapper {
+    position: relative;
+    width: 660px;
+    height: 400px;
+    margin: 20px;
+}
+
+.block {
+    position: absolute;
+    border: 3px solid #262626;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Верхній зелений блок */
+.block-1 {
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 90px;
+    background: #00b050;
+    color: #ffffff;
+    z-index: 1;
+}
+
+/* Зелений блок зліва в середині */
+.block-2 {
+    top: 110px;
+    left: 0;
+    width: 170px;
+    height: 185px;
+    background: #00b050;
+    color: #ffffff;
+    z-index: 1;
+}
+
+/* Великий фіолетовий блок справа в середині */
+.block-3 {
+    top: 110px;
+    left: 190px;
+    width: 450px;
+    height: 185px;
+    background: #b0a0c8;
+    color: #1a1a1a;
+    z-index: 1;
+}
+
+/* Нижній фіолетовий блок */
+.block-4 {
+    top: 315px;
+    left: 0;
+    width: 640px;
+    height: 70px;
+    background: #b0a0c8;
+    color: #1a1a1a;
+    z-index: 1;
+}

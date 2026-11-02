@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+<div class="widget">
+
+    <!-- Прогноз на тиждень (під карткою) -->
+    <ul class="forecast">
+        <li><span class="day">Mon</span><span class="temp">17°</span></li>
+        <li><span class="day">Tue</span><span class="temp">19°</span></li>
+        <li><span class="day">Wed</span><span class="temp">16°</span></li>
+        <li><span class="day">Thu</span><span class="temp">18°</span></li>
+        <li><span class="day">Fri</span><span class="temp">21°</span></li>
+    </ul>
+
+    <!-- Чорна картка з поточною температурою -->
+    <div class="card">
+        <div class="details">Хмарно, вітер 3 м/с</div>
+        <div class="current">17</div>
+    </div>
+
+    <!-- Хмара (накладається на картку та фон) -->
+    <div class="cloud"></div>
+
+    <!-- Кнопки перемикання -->
+    <div class="arrows">
+        <button class="arrow arrow-prev" type="button" aria-label="Назад">&#8592;</button>
+        <button class="arrow arrow-next" type="button" aria-label="Вперед">&#8594;</button>
+    </div>
+
+</div>
+</body>
+</html>

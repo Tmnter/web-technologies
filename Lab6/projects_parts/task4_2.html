@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вертикальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style4_2.css">
+</head>
+<body>
+
+<!-- Фіксована вертикальна панель на повну висоту (піктограма + назва) -->
+<nav class="sidebar">
+    <ul class="menu">
+        <li>
+            <a class="active" href="#home"><span class="material-icons">home</span>Головна</a>
+        </li>
+        <li class="has-sub">
+            <a href="#about"><span class="material-icons">info</span>Про нас</a>
+            <ul class="submenu">
+                <li><a href="#team">Команда</a></li>
+                <li class="has-sub">
+                    <a href="#history">Історія</a>
+                    <ul class="submenu">
+                        <li><a href="#y2020">2020</a></li>
+                        <li><a href="#y2024">2024</a></li>
+                        <li><a href="#y2026">2026</a></li>
+                    </ul>
+                </li>
+                <li><a href="#partners">Партнери</a></li>
+            </ul>
+        </li>
+        <li class="has-sub">
+            <a href="#work"><span class="material-icons">local_cafe</span>Співпраця</a>
+            <ul class="submenu">
+                <li class="has-sub">
+                    <a href="#services">Послуги</a>
+                    <ul class="submenu">
+                        <li><a href="#design">Дизайн</a></li>
+                        <li><a href="#dev">Розробка</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portfolio">Портфоліо</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#contacts"><span class="material-icons">mail</span>Контакти</a>
+        </li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h1>Вертикальна навігаційна панель</h1>
+    <p>Панель зафіксована зліва (<code>position: fixed</code>) і займає всю висоту вікна. Підменю розкриваються праворуч на три рівні вкладеності.
+        Горизонтальний варіант: <a href="horizontal.html">horizontal.html</a>.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+</body>
+</html>

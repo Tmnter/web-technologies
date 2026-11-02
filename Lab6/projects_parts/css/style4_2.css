@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+/* ===== Фіксована вертикальна панель на повну висоту ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 240px;
+    height: 100vh;
+    background-color: #0066b3;
+}
+
+.menu,
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 16px 18px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    transition: background-color 0.2s;
+}
+
+/* піктограма + назва */
+.menu > li > a .material-icons {
+    margin-right: 14px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* активний пункт */
+.menu a.active {
+    background-color: #004a85;
+}
+
+/* :hover */
+.menu li:hover > a:not(.active) {
+    background-color: #0a7ad1;
+}
+
+/* ===== Випадні підменю (2-й та 3-й рівні) — праворуч від панелі ===== */
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    background-color: #0a5a9e;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+.submenu a {
+    padding: 14px 18px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.menu li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* індикатор вкладеного меню */
+.has-sub > a:after {
+    content: "\25B8";
+    float: right;
+    margin-left: 14px;
+}
+
+/* ===== Вміст ===== */
+.content {
+    max-width: 800px;
+    margin-left: 240px;
+    padding: 20px 30px;
+    line-height: 1.6;
+}

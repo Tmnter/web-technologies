@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="header-link" href="#">Mail</a>
+  <a class="header-link" href="#">Images</a>
+
+  <div class="popup-wrap">
+    <!-- Прихований (але фокусований) чекбокс керує станом попапу -->
+    <input class="popup-toggle" type="checkbox" id="popup-toggle" aria-label="Apps">
+    <label class="popup-button" for="popup-toggle"></label>
+
+    <div class="popup">
+      <!-- Контейнер із прокруткою: tabindex="0", щоб прокручувати стрілками -->
+      <div class="popup-content" tabindex="0">
+        <div class="app-grid">
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/calendar.png?raw=true" alt="Calendar"></span>Calendar</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/mail.png?raw=true" alt="Mail"></span>Mail</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/news.png?raw=true" alt="News"></span>News</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/maps.png?raw=true" alt="Map"></span>Map</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/files.png?raw=true" alt="Files"></span>Files</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/contacts.png?raw=true" alt="Contracts"></span>Contacts</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/tanslation.png?raw=true" alt="Translate"></span>Translate</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/videos.png?raw=true" alt="Videos"></span>Videos</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/search.png?raw=true" alt="Search"></span>Search</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/photos.png?raw=true" alt="Photos"></span>Photos</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/apps.png?raw=true" alt="Apps"></span>Apps</a>
+          <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/documents.png?raw=true" alt="Documents"></span>Documents</a>
+        </div>
+
+        <!-- Додаткові іконки: з'являються після натискання «More» -->
+        <div class="popup-extra">
+          <div class="app-grid">
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/chat.png?raw=true" alt="Chat"></span>Chat</a>
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/classroom.png?raw=true" alt="Classroom"></span>Classroom</a>
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/collection.png?raw=true" alt="Collection"></span>Collection</a>
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/mars.png?raw=true" alt="Mars"></span>Mars</a>
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/blogs.png?raw=true" alt="Blogs"></span>Blogs</a>
+            <a class="app-item" href="#"><span class="app-icon"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/promo.png?raw=true" alt="Promos"></span>Promos</a>
+          </div>
+          <a class="popup-footer-link" href="#">Even more from Kottans</a>
+        </div>
+      </div>
+
+      <div class="more-wrap">
+        <input class="more-toggle" type="checkbox" id="more-toggle" aria-label="More">
+        <label class="more-button" for="more-toggle">More</label>
+      </div>
+    </div>
+  </div>
+
+  <a class="header-bell" href="#" aria-label="Notifications"><img src="https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-06/icons/bell.png?raw=true" alt="Promos" width="20" height="20"></a>
+  <a class="header-avatar" href="#" aria-label="Profile">A</a>
+</header>
+
+<main class="page">
+  <p>Натисніть кнопку з дев'ятьма крапками, щоб відкрити або закрити попап. Кнопка «More» додає ще іконки та вмикає прокручування.</p>
+</main>
+
+</body>
+</html>

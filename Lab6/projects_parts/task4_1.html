@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style4_1.css">
+</head>
+<body>
+
+<!-- Фіксована горизонтальна панель (перший рівень — піктограми) -->
+<ul class="navbar">
+    <li>
+        <a class="active" href="#top" title="Головна"><span class="material-icons">home</span></a>
+    </li>
+    <li class="has-sub">
+        <a href="#courses" title="Курси"><span class="material-icons">school</span></a>
+        <ul class="submenu">
+            <li class="has-sub">
+                <a href="#web">Веб-технології</a>
+                <ul class="submenu">
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#js">JavaScript</a></li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="#prog">Програмування</a>
+                <ul class="submenu">
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#cpp">C++</a></li>
+                </ul>
+            </li>
+            <li><a href="#db">Бази даних</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#search" title="Пошук"><span class="material-icons">search</span></a>
+    </li>
+    <li>
+        <a href="#contacts" title="Контакти"><span class="material-icons">mail</span></a>
+    </li>
+    <!-- Останній пункт вирівнюється праворуч через float: right -->
+    <li class="has-sub">
+        <a href="#account" title="Профіль"><span class="material-icons">account_circle</span></a>
+        <ul class="submenu">
+            <li><a href="#profile">Мій профіль</a></li>
+            <li class="has-sub">
+                <a href="#settings">Налаштування</a>
+                <ul class="submenu">
+                    <li><a href="#theme">Тема</a></li>
+                    <li><a href="#lang">Мова</a></li>
+                </ul>
+            </li>
+            <li><a href="#logout">Вийти</a></li>
+        </ul>
+    </li>
+</ul>
+
+<main class="content" id="top">
+    <!-- Вступний блок для демонстрації скролу та ефекту sticky -->
+    <div class="hero">
+        <h2>Горизонтальна навігаційна панель</h2>
+        <p>Прокрутіть сторінку вниз: верхня панель зафіксована (<code>position: fixed</code>), а сіра панель розділів нижче спочатку рухається разом із цим блоком, а потім «липне» під нею (<code>position: sticky</code>).</p>
+        <p>Вертикальний варіант: <a href="vertical.html">vertical.html</a>.</p>
+    </div>
+
+    <!-- «Липка» (sticky) навігація по розділах сторінки -->
+    <nav class="section-nav">
+        <a class="active" href="#intro">Вступ</a>
+        <a href="#part1">Розділ 1</a>
+        <a href="#part2">Розділ 2</a>
+        <a href="#part3">Розділ 3</a>
+    </nav>
+
+    <h2 id="intro">Вступ</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2 id="part1">Розділ 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+    <h2 id="part2">Розділ 2</h2>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <h2 id="part3">Розділ 3</h2>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+</main>
+
+</body>
+</html>

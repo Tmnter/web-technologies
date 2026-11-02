@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+}
+
+/* Контейнер центрується на сторінці та має ширину найширшого блоку (390px) */
+.wrapper {
+    position: relative;
+    width: 390px;
+    margin: 40px auto 0 auto;
+}
+
+.block {
+    position: relative;
+    /* Центруємо кожен блок по горизонталі і робимо відступ знизу замість gap */
+    margin: 0 auto 14px auto;
+    border: 2px solid #262626;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+}
+
+/* Прибираємо відступ у останнього блоку */
+.block-3 {
+    margin-bottom: 0;
+}
+
+/* Невидима «перемичка» під блоком, щоб курсор не втрачав :hover у проміжку */
+.block::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 14px;
+}
+
+.block-1 {
+    width: 130px;
+    height: 40px;
+    background: #00b050;
+}
+
+/* Блоки 2 і 3 приховані через opacity */
+.block-2 {
+    width: 250px;
+    height: 40px;
+    background: #5b8fd6;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.block-3 {
+    width: 390px;
+    height: 65px;
+    background: #614a7b;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Наведення на Блок 1 → з'являється Блок 2 */
+.block-1:hover + .block-2,
+.block-2:hover,
+.block-2:has(+ .block-3:hover) {
+    opacity: 1;
+}
+
+/* Наведення на Блок 2 → з'являється Блок 3 */
+.block-2:hover + .block-3,
+.block-3:hover {
+    opacity: 1;
+}
