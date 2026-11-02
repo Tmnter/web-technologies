@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(226, 240, 217);
+    color: rgb(30, 60, 35);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(27, 94, 32);
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: rgb(46, 125, 50);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(27, 94, 32);
+}
+
+fieldset {
+    background-color: rgb(200, 230, 201);
+    border: 2px solid rgb(76, 175, 80);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(56, 142, 60);
+    padding: 4px 14px;
+    border-radius: 6px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(27, 75, 32);
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(20, 50, 25);
+    background-color: rgb(245, 252, 243);
+    border: 1px solid rgb(102, 187, 106);
+    border-radius: 4px;
+    padding: 5px 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: white;
+    outline: 2px solid rgb(76, 175, 80);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: rgb(46, 125, 50);
+}
+
+input[type="reset"] {
+    background-color: rgb(139, 154, 70);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(27, 94, 32);
+}
+
+input[type="reset"]:hover {
+    background-color: rgb(104, 120, 40);
+}

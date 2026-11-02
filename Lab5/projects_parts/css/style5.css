@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(245, 250, 244);
+    color: rgb(20, 60, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: rgb(27, 94, 32);
+}
+
+/* ---------- 1. box-sizing ---------- */
+section:nth-of-type(1) div {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid rgb(46, 125, 50);
+    background-color: rgb(200, 230, 201);
+    margin: 20px;
+}
+
+section:nth-of-type(1) div:nth-of-type(1) {
+    box-sizing: content-box;
+    /* Загальна ширина: 300 + 2 * 20 + 2 * 5 = 350px */
+}
+
+section:nth-of-type(1) div:nth-of-type(2) {
+    box-sizing: border-box;
+    /* Загальна ширина: 300px */
+}
+
+/* ---------- 2. overflow ---------- */
+section:nth-of-type(2) {
+    padding-bottom: 120px; /* місце для тексту, що виходить за межі блоку */
+}
+
+section:nth-of-type(2) div {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 220px;
+    max-height: 80px;
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid rgb(46, 125, 50);
+    background-color: rgb(220, 237, 200);
+    font-size: 14px;
+}
+
+section:nth-of-type(2) div:nth-of-type(1) {
+    overflow: visible;
+}
+
+section:nth-of-type(2) div:nth-of-type(2) {
+    overflow: hidden;
+}
+
+section:nth-of-type(2) div:nth-of-type(3) {
+    overflow: scroll;
+}
+
+section:nth-of-type(2) div:nth-of-type(4) {
+    overflow: auto;
+}
+
+/* ---------- 3. display ---------- */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* приховуємо маркери списку */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(46, 125, 50);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgb(27, 94, 32);
+}
+
+/*
+   Приховуємо третій пункт меню ("Послуги").
+
+   display: none повністю прибирає елемент із потоку документа:
+   він не відображається, не займає місця на сторінці, а сусідні
+   пункти зсуваються на його місце. Елемент також не потрапляє
+   в дерево доступності (екранні читалки його пропускають) і
+   не отримує фокус з клавіатури.
+
+   Інші способи приховування працюють інакше:
+   - visibility: hidden - елемент невидимий, але ЗАЛИШАЄ місце на сторінці;
+   - opacity: 0 - елемент прозорий, залишає місце і лишається клікабельним;
+   - позиціювання за межі екрана - елемент існує, але зсунутий поза видимою областю.
+*/
+nav li:nth-child(3) {
+    display: none;
+    /* opacity: 0;*/
+}

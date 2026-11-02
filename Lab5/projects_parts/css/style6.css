@@ -1,0 +1,107 @@
+body {
+    background-color: #1b2a41;
+    background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1920&auto=format&fit=crop');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+}
+
+.section-block {
+    margin-bottom: 40px;
+}
+
+.inline-div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: #ffd166;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.block-span {
+    display: block;
+    width: 150px;
+    background-color: #06d6a0;
+    border: 1px solid #000;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.repeat-box {
+    height: 200px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png');
+    background-position: top left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.repeat-space {
+    background-repeat: space;
+}
+
+.repeat-round {
+    background-repeat: round;
+}
+
+.size-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.size-contain {
+    background-size: contain;
+}
+
+.size-cover {
+    background-size: cover;
+}
+
+.scroll-box {
+    max-height: 150px;
+    overflow: auto;
+    border: 2px solid #333;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg');
+    background-position: center;
+}
+
+.attach-scroll {
+    background-attachment: scroll;
+}
+
+.attach-local {
+    background-attachment: local;
+}

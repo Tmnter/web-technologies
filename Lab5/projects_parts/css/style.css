@@ -1,0 +1,80 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+/* Загальні вимоги до маркерованого списку */
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+
+/* Список 1-го рівня */
+ul.level1 {
+    background-color: rgb(103, 158, 128);
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+ul.level1 > li {
+    margin-left: -50px;
+    padding-left: 50px;
+    background-position: 8px 4px;
+    padding-bottom: 10px;
+}
+
+/* Список 2-го рівня */
+ul.level2 {
+    font-size: 18px;
+    font-style: italic;
+    padding: 0;
+}
+
+ul.level2 > li {
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    padding-left: 40px;
+    background-position: 4px center;
+}
+
+/* span */
+span {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+ul.level1 > li > span {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+ul.level2 > li > span {
+    background-color: rgb(218, 106, 32);
+}
+
+/* Іконки-маркери */
+li.checklist { background-image: url("png/rule.png"); }
+li.route     { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/ad_units.png?raw=true"); }
+li.ticket    { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/airplane_ticket.png?raw=true"); }
+li.hotel     { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/hotel.png?raw=true"); }
+li.car       { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/car_rental.png?raw=true"); }
+li.bar       { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/local_bar.png?raw=true"); }
+li.casino    { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/casino.png?raw=true"); }
+li.museum    { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/museum.png?raw=true"); }
+li.festival  { background-image: url("https://github.com/Computer-Science-Department-ChNU/web-technologies/blob/main/html-css/labs/lab-05/icons/festival.png?raw=true"); }
